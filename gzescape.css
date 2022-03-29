@@ -1,22 +1,58 @@
 
-html,body{width:100%;height:100%}
-
 body {
-    font-size: 2vw;
+    font-size: 3vw;
     font-family: "Georgia Pro";
+    text-align: center;
 }
 
-
-input {
+#submission p {
     margin: 0 auto;
-    width: 50%;
-    height: 8vw;
-    font-size: 2vw;
+}
+
+#submission input {
+    font-size: 2.5vw;
     font-family: "Georgia Pro";
+    margin: 0.5vw;
+    border-radius: 1vw;
+}
+
+#input_box {
+    height: 7vw;
+    width: 60%;
+    text-align: center;
+}
+
+#submit_button {
+    height: 4vw;
+    width: 45%;
+}
+
+#submit_button:hover {
+    background-color: #ddd;
 }
 
 
 #output_box {
-    background-color: #fff;
+    color: #000;
+    width: 50%;
+    margin: 0 auto;
 }
 
+
+#further_information {
+    font-size: 1.5vw;
+    margin: 2vw;
+    border: 1px solid #000;
+    border-radius: 1vw;
+    background-color: #eee
+}
+
+#further_information p {
+    width: 60%;
+    margin: 2vw auto;
+    text-align: left;
+}
+
+#further_information img {
+    max-width: 60%;
+}

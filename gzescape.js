@@ -1,12 +1,12 @@
 
 const correct = (output_element) => {
-    output_element.innerHTML="Das ist richtig! Notiere dir die Lösung:<br>" + result;
-    output_element.setAttribute("style", "background-color: #0f0");
+    output_element.innerHTML="<p>Das ist richtig! Notiere dir die Lösung:<br>" + result + "</p>";
+    output_element.setAttribute("style", "color: rgb(40, 141, 0)");
 }
 
 const incorrect = (output_element) => {
-    output_element.innerHTML="Diese Lösung ist leider nicht korrekt.";
-    output_element.setAttribute("style", "background-color: #f00");
+    output_element.innerHTML="<p>Diese Lösung ist leider nicht korrekt.</p>";
+    output_element.setAttribute("style", "color: #f00");
 }
 
 const check_input = (input_element, output_element, key) => {
