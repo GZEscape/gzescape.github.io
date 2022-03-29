@@ -1,0 +1,22 @@
+
+html,body{width:100%;height:100%}
+
+body {
+    font-size: 2vw;
+    font-family: "Georgia Pro";
+}
+
+
+input {
+    margin: 0 auto;
+    width: 50%;
+    height: 8vw;
+    font-size: 2vw;
+    font-family: "Georgia Pro";
+}
+
+
+#output_box {
+    background-color: #fff;
+}
+
