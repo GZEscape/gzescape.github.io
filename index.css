@@ -6,6 +6,11 @@ body {
     text-align: center;
 }
 
+sub {
+    vertical-align: sub;
+    font-size: small;
+}
+
 p {
     text-align: left;
     max-width: 60%;
