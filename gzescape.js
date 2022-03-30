@@ -10,7 +10,7 @@ const incorrect = (output_element) => {
 }
 
 const check_input = (input_element, output_element, key) => {
-    if (input_element.value == key) {
+    if (input_element.value.toUpperCase() == key.toUpperCase()) {
         correct(output_element);
     }
     else {
@@ -19,7 +19,7 @@ const check_input = (input_element, output_element, key) => {
 }
 
 const soft_check_input = (input_element, output_element, key) => {
-    if (input_element.value == key) {
+    if (input_element.value.toUpperCase() == key.toUpperCase()) {
         correct(output_element);
     }
 }
@@ -36,9 +36,9 @@ const show_tip = (out_element, tip_no) => {
     out_element.innerHTML = "<p>" + tips[tip_no] + "</p>";
 }
 
-const tip1_button = document.getElementById('Tip1');
-const tip2_button = document.getElementById('Tip2');
 const tip_text = document.getElementById('TipText');
 
-tip1_button.addEventListener('click', () => show_tip(tip_text, 0));
-tip2_button.addEventListener('click', () => show_tip(tip_text, 1));
+for(let i = 0; i < tips.length; i++) {
+    const tip_button = document.getElementById('Tip'+ (i+1));
+    tip_button.addEventListener('click', () => show_tip(tip_text, i))
+}
