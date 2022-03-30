@@ -30,3 +30,15 @@ const output_box = document.getElementById('output_box');
 
 submit_button.addEventListener('click', () => check_input(input_box, output_box, key));
 input_box.addEventListener('keyup', () => soft_check_input(input_box, output_box, key));
+
+
+const show_tip = (out_element, tip_no) => {
+    out_element.innerHTML = "<p>" + tips[tip_no] + "</p>";
+}
+
+const tip1_button = document.getElementById('Tip1');
+const tip2_button = document.getElementById('Tip2');
+const tip_text = document.getElementById('TipText');
+
+tip1_button.addEventListener('click', () => show_tip(tip_text, 0));
+tip2_button.addEventListener('click', () => show_tip(tip_text, 1));

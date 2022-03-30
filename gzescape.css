@@ -9,7 +9,7 @@ body {
     margin: 0 auto;
 }
 
-#submission input {
+#submission input, #tips input {
     font-size: 2.5vw;
     font-family: "Georgia Pro";
     margin: 0.5vw;
@@ -22,12 +22,12 @@ body {
     text-align: center;
 }
 
-#submit_button {
+#submit_button, #tips input {
     height: 4vw;
     width: 45%;
 }
 
-#submit_button:hover {
+#submit_button:hover, #tips input:hover {
     background-color: #ddd;
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 
-#further_information {
+#further_information, #tips {
     font-size: 1.5vw;
     margin: 2vw;
     border: 1px solid #000;
@@ -47,7 +47,7 @@ body {
     background-color: #eee
 }
 
-#further_information p {
+#further_information p, #tips p {
     width: 60%;
     margin: 2vw auto;
     text-align: left;
@@ -55,4 +55,13 @@ body {
 
 #further_information img {
     max-width: 60%;
+}
+
+#tips p {
+    font-size: 2vw;
+    text-align: center;
+}
+
+#tips input {
+    font-size: 2vw;
 }
