@@ -1,6 +1,7 @@
 
 const correct = (output_element) => {
-    output_element.innerHTML="<p>Das ist richtig! Notiere dir die Lösung:<br>" + result + "</p>";
+    output_element.innerHTML = "<p>Das ist richtig! Notiert euch den Code<br>\"" + result
+                            + "\"<br> Öffnet nun einen weiteren Umschlag, falls noch einer vorhanden ist. Sonst versucht mit Hilfe der erhaltenen Codes das Zahlenschloss zu öffnen.</p>";
     output_element.setAttribute("style", "color: rgb(40, 141, 0)");
 }
 
